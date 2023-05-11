@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha loja</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="/produtos">Produtos</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Detalhes do produto</h1>
+            <div class="product-details">
+                <img src="" alt="Nome do produto">
+                <h2></h2>
+                <p class="description"></p>
+                <p class="price"></p>
+                <div class="actions">
+                    <button>Comprar</button>
+                    <button>Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Minha Loja</p>
+    </footer>
+
+    <script>
+        const productId = 1; // ID do produto a ser exibido
+        const imgElement = document.querySelector('.product-details img');
+        const nameElement = document.querySelector('.product-details h2');
+        const descriptionElement = document.querySelector('.product-details .description');
+        const priceElement = document.querySelector('.product-details .price');
+
+        fetch(`http://localhost:3000/produtos/${productId}`)
+            .then(response => response.json())
+            .then(data => {
+                imgElement.src = data.imagem;
+                imgElement.alt = data.nome;
+                nameElement.textContent = data.nome;
+                descriptionElement.textContent = data.descricao;
+                priceElement.textContent = `R$ ${data.preco.toFixed(2)}`;
+            })
+            .catch(error => console.error(error));
+    </script>
+</body>
+
+</html>

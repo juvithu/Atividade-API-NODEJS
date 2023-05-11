@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.header {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.product {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.product:last-child {
+    border-bottom: none;
+}
+
+.product h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.product p {
+    margin: 0;
+    color: #666;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.actions button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #3e8e41;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form input[type="text"],
+.form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.product-details {
+    margin: 20px auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-details h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.product-details img {
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-details .description {
+    margin-bottom: 20px;
+}
+
+.product-details .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-details .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-details .actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.product-details .actions button:hover {
+    background-color: #3e8e41;
+}
+
+.add-form {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.add-form input[type="text"],
+.add-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.add-form input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-form input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.product-list {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.product-list h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.product-list ul {
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.product-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-list li:hover {
+    background-color: #f9f9f9;
+}
+
+.product-list li .product-title {
+    font-weight: bold;
+}
+
+.product-list li .product-price {
+    font-size: 1.2em;
+}
+
+.product-list li .actions {
+    display: flex;
+}
+
+.product-list li .actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.product-list li .actions button:hover {
+    background-color: #3e8e41;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
